@@ -10,4 +10,5 @@ rustup install 1.74.0
 # Set the installed version as the default
 rustup default 1.74.0
 
-# Add other setup commands below this line
+echo "Installing clippy..."
+rustup component add clippy

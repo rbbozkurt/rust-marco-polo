@@ -10,6 +10,7 @@ format:
 	cargo fmt --quiet
 
 lint:
+	@command -v cargo-clippy >/dev/null 2>&1 || { echo >&2 "Installing clippy..."; rustup component add clippy; }
 	cargo clippy --quiet
 
 test:
