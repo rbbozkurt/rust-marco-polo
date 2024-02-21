@@ -1,6 +1,15 @@
 repos:
-  - repo: https://github.com/doublify/pre-commit-rust
-    rev: master  # Use the latest revision
+  - repo: local
     hooks:
       - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo fmt -- --check
+        language: system
+        types: [rust]
+        pass_filenames: false
       - id: cargo-clippy
+        name: cargo clippy
+        entry: cargo clippy -- -D warnings
+        language: system
+        types: [rust]
+        pass_filenames: false
