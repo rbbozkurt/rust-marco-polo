@@ -1,21 +1,14 @@
-//! Cli utils for marco polo game
+use clap::{Parser, Subcommand};
 
-use clap::Parser;
-
-#[derive(Parser)]
-#[clap(
-    version = "1.0",
-    author = "R. Berkay Bozkurt",
-    about = "Marco Polo game"
-)]
-
-struct Cli {
+#[derive(Parser, Debug)]
+#[clap(version = "1.0", author = "R. Berkay Bozkurt", about = "Marco Polo game")]
+pub struct Cli {
     #[clap(subcommand)]
-    command: Option<Commands>,
+    pub command: Option<Commands>,
 }
 
-#[derive(Parser)]
-enum Commands {
+#[derive(Subcommand, Debug)]
+pub enum Commands {
     #[clap(version = "1.0", author = "R. Berkay Bozkurt")]
     Play {
         #[clap(short, long)]
