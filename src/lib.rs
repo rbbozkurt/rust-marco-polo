@@ -1,19 +1,22 @@
 //! A Marco polo game
 //! If the name 'Marco' passed as an argument, then the program respons with 'Polo',
-//! otherwise respons 'What's your name?'. 
+//! otherwise respons 'What's your name?'.
 //! # Examples:
 //! ```
 //! use marco_polo::marco;
 //! let result = marco("Marco");
 //! assert_eq!(result, "Polo");
-//! 
+//!
 //! let result = marco("John");
 //! assert_eq!(result, "What's your name?");
-//! 
+//!
+
+pub mod cli_util;
+
 pub fn marco(name: &str) -> String {
     if name == "Marco" {
         "Polo".to_string()
-    }else {
+    } else {
         "What's your name?".to_string()
-    }   
+    }
 }
