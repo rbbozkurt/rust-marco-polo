@@ -1,5 +1,8 @@
-use marco_polo::cli_util;
-use marco_polo::cli_util::Cli; // Add missing import
+use marco_polo::marco;
+use clap::Parser;
+use marco_polo::cli_util::Commands;
+use marco_polo::cli_util::Cli;
+
 
 fn main() {
     let args = Cli::parse();
