@@ -1,2 +1,2 @@
-# rust-project-template
-This repo is intended to serve as template for rust projects.
+# rust-marco-polo
+This repo is just a basic tutorial for rust programming.
