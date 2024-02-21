@@ -57,8 +57,8 @@ Replace "YourName" with your desired player name to start the game.
 Contributions to the Marco Polo game are welcome! Here's how you can contribute:
 
 * Bug Reports: Notice a bug? Open an issue with a clear title and description.
-* Feature Requests: Have an idea for an improvement? We'd love to hear it. Open an issue to suggest new features.
-* Pull Requests: Want to contribute directly? Fork the repository, make your changes, and submit a pull request
+* Feature Requests: Have an idea for an improvement? I'd love to hear it. Open an issue to suggest new features.
+* Pull Requests: Want to contribute directly? Fork the repository, make your changes, and submit a pull request.
 
 ## License 
 
