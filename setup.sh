@@ -12,3 +12,7 @@ rustup default 1.74.0
 
 echo "Installing clippy..."
 rustup component add clippy
+
+# Ensure rustfmt is installed
+echo "Installing rustfmt..."
+rustup component add rustfmt

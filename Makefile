@@ -7,6 +7,7 @@ rust-version:
 	clippy-driver --version		#rust linter
 
 format:
+	@rustup component list | grep 'rustfmt.*installed' >/dev/null || rustup component add rustfmt
 	cargo fmt --quiet
 
 lint:
