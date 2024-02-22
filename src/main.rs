@@ -1,6 +1,6 @@
 use clap::Parser;
-use marco_polo::cli_util::Cli;
-use marco_polo::cli_util::Commands;
+use marco_polo::cli::cli_util::Cli;
+use marco_polo::cli::cli_util::Commands;
 use marco_polo::marco;
 
 fn main() {

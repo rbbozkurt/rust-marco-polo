@@ -11,7 +11,7 @@
 //! assert_eq!(result, "What's your name?");
 //!
 
-pub mod cli_util;
+pub mod cli;
 
 pub fn marco(name: &str) -> String {
     if name == "Marco" {
