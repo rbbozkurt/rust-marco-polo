@@ -20,3 +20,17 @@ pub fn marco(name: &str) -> String {
         "What's your name?".to_string()
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_marco_polo() {
+        let result = marco("Marco");
+        assert_eq!(result, "Polo");
+
+        let result = marco("John");
+        assert_eq!(result, "What's your name?");
+    }
+}
