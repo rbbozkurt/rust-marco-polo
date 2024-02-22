@@ -19,3 +19,28 @@ pub enum Commands {
         name: String,
     },
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    impl PartialEq for Commands {
+        fn eq(&self, other: &Self) -> bool {
+            match (self, other) {
+                (Commands::Play { name: name1 }, Commands::Play { name: name2 }) => name1 == name2,
+            }
+        }
+    }
+
+    #[test]
+    fn test_cli_play_command() {
+        let args = vec!["myapp", "play", "--name", "John"];
+        let cli: Cli = Cli::parse_from(args);
+        assert_eq!(
+            cli.command,
+            Some(Commands::Play {
+                name: "John".to_string()
+            })
+        );
+    }
+}
